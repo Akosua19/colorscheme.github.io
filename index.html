@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Scheme </title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 30px;
+        }
+
+       
+        li{
+            float: left;
+            width: 35px;
+            height: 35px;
+            margin: 0 15px 15px 0;
+            border-radius:35px;
+            border: 3px solid black;
+            overflow: hidden;
+            }
+
+            p{
+                font-size: 20px;
+            }
+            #greenButton{
+                background-color: #00FF00;
+            }
+
+            #redButton{
+                background-color: #FF0000; 
+            }
+
+            #yellowButton
+            {
+                background-color: #FFFF00
+            }
+
+            #blueButton{
+                background-color:#0000Ff;
+            }
+    </style>
+</head>
+<body>
+    <div id="Box1">
+        <h1>Color Scheme Checker</h1>
+                <ul>
+                    <li id="greenButton" onclick="changeGreen()"></li>
+                    <li id="redButton" onclick="changeRed()"></li>
+                    <li id="yellowButton" onclick="changeYellow()"></li>
+                    <li id="blueButton" onclick="changeBlue()"></li>
+                </ul>
+                <p>Click on any of the colours to change background color of the page ! </p>
+    </div>
+
+    <script>
+        function changeGreen(){
+            document.getElementsByTagName('body')[0].style.backgroundColor = 'green';
+            document.getElementsByTagName('body')[0].style.color = 'white';
+
+        }
+        
+        function changeRed(){
+            document.getElementsByTagName('body')[0].style.backgroundColor = 'red';
+        }
+
+        
+        function changeYellow(){
+            document.getElementsByTagName('body')[0].style.backgroundColor = 'yellow';
+        }
+
+        
+        function changeBlue(){
+            document.getElementsByTagName('body')[0].style.backgroundColor = 'blue';
+        }
+    </script>
+</body>
+</html>
